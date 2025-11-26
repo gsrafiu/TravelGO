@@ -1,0 +1,102 @@
+.data_table {
+  height: 660px;
+  width: 100%;
+  max-width: 100%;
+
+  .userr {
+    display: flex;
+    align-items: center;
+
+    .userr_image {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  }
+
+  .status {
+    //
+    &.active {
+      color: green;
+    }
+    &.passive {
+      color: #ff74b1;
+    }
+  }
+
+  .actionn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .role_btn,
+    .delete_btn {
+      padding: 5px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      background: none;
+      transition: 0.2s ease;
+    }
+
+    .role_btn {
+      color: #7551f8d2;
+      border-color: #7551f8bd;
+
+      &:hover {
+        background: #7551f814;
+      }
+
+      &.user {
+        color: #2c8f3a;
+        border-color: #2c8f3a;
+
+        &:hover {
+          background: #2c8f3a1a;
+        }
+      }
+
+      &.admin {
+        color: #3461ff;
+        border-color: #3461ffb3;
+
+        &:hover {
+          background: #3461ff1a;
+        }
+      }
+    }
+
+    .delete_btn {
+      color: #ff74b0f5;
+      border: 1px solid #ff74b0cb;
+
+      &:hover {
+        background: #ff74b016;
+      }
+    }
+  }
+
+  .placeholder_text {
+    margin-top: 24px;
+    color: #777;
+  }
+
+  .error_text {
+    margin-top: 12px;
+    color: #d14343;
+  }
+
+  .data_grid {
+    width: 100% !important;
+
+    .admin-row {
+      background: #fff6d6;
+
+      &:hover {
+        background: #ffeebb;
+      }
+    }
+  }
+}
